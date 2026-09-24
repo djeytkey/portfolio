@@ -1,290 +1,284 @@
-<!--This code was created by @WerDeveloper.
-Unauthorized copying, distribution, or modification of this code, in whole or in part, is strictly prohibited without prior written permission.
-Please do not remove or alter the credit to the original creator. If you wish to use this code for personal or commercial purposes, kindly contact the creator for permissions.
-Thank you for respecting the work and effort that went into creating this code. -->
-
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tarik BOUKJIJ</title>
-    <link rel="icon" type="image/png" href="https://i.ibb.co/QvmxvDz3/6e098dd3-a2f7-4d04-9130-b9952be96389.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"rel="stylesheet">
+    <title>Tarik - Développeur Web & Logiciel | Portfolio</title>
+    <meta name="description" content="Portfolio de Tarik, développeur web et logiciel avec plus de 20 ans d'expérience.">
     <link rel="stylesheet" href="style.css">
+    <!-- Icônes Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
-    <div class="background-animation"></div>
-    <div class="floating-elements" id="floatingElements"></div>
-    <nav id="mainNav">
+    <!-- Navigation -->
+    <header class="header">
         <div class="container nav-container">
-            <a href="#" class="logo">Tarik BOUKJIJ</a>
-            <div class="nav-links">
-                <a href="#home">Home</a>
-                <a href="#education">Education</a>
-                <a href="#journey">Journey</a>
-                <a href="#skills">Skills</a>
-            </div>
-            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle mobile menu">
-                <span></span>
-                <span></span>
-                <span></span>
+            <a href="#" class="logo">Morocco<span>Der</span></a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#parcours">Parcours</a></li>
+                    <li><a href="#apropos">À propos</a></li>
+                    <li><a href="#technologies">Technologies</a></li>
+                    <li><a href="#projets">Projets</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <i class="fas fa-bars"></i>
             </button>
         </div>
+    </header>
 
-        <div class="mobile-nav" id="mobileNav">
-            <a href="#home" onclick="closeMobileMenu()">
-                <i class="fas fa-home"></i> Home
-            </a>
-            <a href="#education" onclick="closeMobileMenu()">
-                <i class="fas fa-graduation-cap"></i> Education
-            </a>
-            <a href="#journey" onclick="closeMobileMenu()">
-                <i class="fas fa-road"></i> Journey
-            </a>
-            <a href="#skills" onclick="closeMobileMenu()">
-                <i class="fas fa-code"></i> Skills
-            </a>
+    <!-- Hero Section -->
+    <section class="hero" id="accueil">
+        <div class="container hero-content">
+            <h1>Bonjour, je suis <span class="highlight">Tarik</span></h1>
+            <p class="hero-subtitle">Développeur Web & Logiciel | Expert en Sécurité & Optimisation</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Consulter mon CV</a>
+                <a href="#projets" class="btn btn-secondary">Voir mes projets</a>
+            </div>
         </div>
+    </section>
 
-        <div class="mobile-overlay" id="mobileOverlay" onclick="closeMobileMenu()"></div>
-    </nav>
-
-    <section id="home" class="hero">
+    <!-- Services Section -->
+    <section class="section services" id="services">
         <div class="container">
-            <div class="hero-content">
-                <div class="hero-text fade-in">
-                    <h1>Hey! This is <span>WeRDeveloper</span></h1>
-                    <p>A web developer who loves creating websites and Telegram bots. I focus on clean design, smooth functionality, and smart automation to make things easier.</p>
-                    <a href="#journey" class="cta-button">Explore My Journey</a>
+            <h2 class="section-title">Ma spécialisation</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-code service-icon"></i>
+                    <h3>Développement Web</h3>
+                    <ul>
+                        <li>Sites web responsives</li>
+                        <li>Applications web sur mesure</li>
+                        <li>Développement frontend & backend</li>
+                        <li>Optimisation des performances et du SEO</li>
+                    </ul>
                 </div>
-                <div class="hero-visual fade-in">
-                    <div class="floating-card">
-                        <div class="card-content">
-                            <div class="profile-avatar">
-                                <img src="https://i.ibb.co/QvmxvDz3/6e098dd3-a2f7-4d04-9130-b9952be96389.png" alt="Profile Image">
-                            </div>
-                            <h3>Deep AKA "WeRDeveloper"</h3>
-                            <p>Full Stack Developer</p>
-                            <div class="location-chip">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <span>Tripura, India</span>
-                            </div>
-                            <div
-                                style="margin-top: 20px; padding: 15px; background: rgba(16, 185, 129, 0.1); border-radius: 10px; width: 100%;">
-                                <p style="font-size: 0.9rem; margin-bottom: 5px;"><strong>Coding Since:</strong></p>
-                                <p style="font-size: 1.2rem; font-weight: 600; color: var(--accent);">2018</p>
-                            </div>
+                <div class="service-card">
+                    <i class="fas fa-laptop-code service-icon"></i>
+                    <h3>Développement Logiciel</h3>
+                    <ul>
+                        <li>Logiciels métiers personnalisés</li>
+                        <li>Conception et intégration d’API</li>
+                        <li>Outils d’automatisation</li>
+                        <li>Maintenance et mise à niveau des systèmes</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-shield-alt service-icon"></i>
+                    <h3>Sécurité & Optimisation</h3>
+                    <ul>
+                        <li>Audits de code</li>
+                        <li>Amélioration des performances</li>
+                        <li>Bonnes pratiques de sécurité</li>
+                        <li>Correction de bugs & refactorisation</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-primary" download>Télécharger mon CV</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parcours Section -->
+    <section class="section parcours" id="parcours">
+        <div class="container">
+            <h2 class="section-title">Parcours</h2>
+            <div class="parcours-grid">
+                <div class="parcours-column">
+                    <h3 class="column-title"><i class="fas fa-graduation-cap"></i> Formation</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-date">Sept 1999 - Fév 2002</div>
+                            <h4>Technicien spécialisé en développement informatique</h4>
+                            <p>École Royales de l'Air, Marrakech, Maroc</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">Sept 1998 - Sept 1999</div>
+                            <h4>1ère année Mathématiques/Physiques</h4>
+                            <p>Faculté des Sciences Moulay Ismail, Meknès, Maroc</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">Sept 1998</div>
+                            <h4>Baccalauréat en Sciences Mathématiques</h4>
+                            <p>Lycée Moulay Ismail, Meknès, Maroc</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="parcours-column">
+                    <h3 class="column-title"><i class="fas fa-briefcase"></i> Expérience</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-date">Dec 2020 - Jan 2026</div>
+                            <h4>Chef d'équipe de développement</h4>
+                            <p>Al Mokhlif Oud, Buraydah, Arabie Saoudite</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">Nov 2015 - Présent</div>
+                            <h4>Chef du service informatique</h4>
+                            <p>Forces Royales Air, Benslimane, Maroc</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">Fév 2002 - Nov 2015</div>
+                            <h4>Programmeur Analyste</h4>
+                            <p>Forces Royales Air, Meknès, Maroc</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="scroll-down">
-            <a href="#education">
-                <i class="fas fa-chevron-down"></i>
-                <span>Scroll Down</span>
-            </a>
-        </div>
     </section>
 
-    <section id="education" class="education">
+    <!-- À propos Section -->
+    <section class="section apropos" id="apropos">
         <div class="container">
-            <div class="section-title fade-in">
-                <h2>Education Status</h2>
-                <p>You can read this to know more about me.</p>
-            </div>
-            <div class="cards-grid">
-                <div class="glass-card fade-in">
-                    <div class="card-icon">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <h3 class="card-title">Bachelor of Computer Applications (BCA)</h3>
-                    <p>I have completed my BCA from Techno College Of Engineering Agartala (TCEA) and am currently working as a Software Engineer in a private organization.</p>
-                    <div style="margin-top: 20px; display: flex; align-items: center; gap: 10px;">
-                        <div style="width: 10px; height: 10px; background: var(--accent); border-radius: 50%;"></div>
-                        <span>Status: <strong>Corporate employee</strong></span>
-                    </div>
+            <div class="apropos-content">
+                <h2 class="section-title">À propos</h2>
+                <div class="experience-badge">
+                    <span class="number">+20</span>
+                    <span class="text">Années d'expérience professionnelle</span>
                 </div>
-
-                <div class="glass-card fade-in">
-                    <div class="card-icon">
-                        <i class="fas fa-laptop-code"></i>
-                    </div>
-                    <h3 class="card-title">Self-Taught Developer</h3>
-                    <p>Learning programming through online resources, hands-on projects, and consistent practice.
-                        Balancing academic studies with coding passion.</p>
-                    <div style="margin-top: 20px; display: flex; align-items: center; gap: 10px;">
-                        <div style="width: 10px; height: 10px; background: var(--primary); border-radius: 50%;"></div>
-                        <span>Learning Method: <strong>Online & Self-Study</strong></span>
-                    </div>
-                </div>
-
-                <div class="glass-card fade-in">
-                    <div class="card-icon">
-                        <i class="fas fa-rocket"></i>
-                    </div>
-                    <h3 class="card-title">Future Goals</h3>
-                    <p>My future goal is to make my parents happy and provide them with a good and luxurious life. My biggest dream is to see them happy and fulfilled.</p>
-                    <div style="margin-top: 20px; display: flex; align-items: center; gap: 10px;">
-                        <div style="width: 10px; height: 10px; background: var(--secondary); border-radius: 50%;"></div>
-                        <span>Status: <strong>Work in progress</strong></span>
-                    </div>
-                </div>
-
+                <p>Passionné par le développement informatique et la résolution de problèmes complexes, je mets mon expertise au service de projets innovants et exigeants.</p>
             </div>
         </div>
     </section>
 
-    <section id="journey" class="journey">
+    <!-- Technologies Section -->
+    <section class="section technologies" id="technologies">
         <div class="container">
-            <div class="section-title fade-in">
-                <h2>My Coding Journey</h2>
-                <p>Started in 2019 and still going strong. Here's how my development journey has progressed.</p>
-            </div>
-
-            <div class="journey-timeline">
-                <div class="timeline-item fade-in">
-                    <div class="timeline-year">2018</div>
-                    <div class="timeline-content">
-                        <h3 style="margin-bottom: 10px; color: white;">The Beginning</h3>
-                        <p>After completing my 12th board exams, I passed with 77.8% in the Science stream. Then I got admission to Techno College of Agartala. During that time, I also started learning HTML, CSS, JavaScript, etc. However, I was very confused at that phase of my life.</p>
-                    </div>
-                </div>
-                <div class="timeline-item fade-in">
-                    <div class="timeline-year">2021</div>
-                    <div class="timeline-content">
-                        <h3 style="margin-bottom: 10px; color: white;">Exploring Languages</h3>
-                        <p>Expanded my knowledge by learning Python, Java, and C++. Explored core programming concepts
-                            like data structures, algorithms, and object-oriented programming.</p>
-                    </div>
-                </div>
-                <div class="timeline-item fade-in">
-                    <div class="timeline-year">2022</div>
-                    <div class="timeline-content">
-                        <h3 style="margin-bottom: 10px; color: white;">Backend</h3>
-                        <p>Slowly, I started moving forward in full-stack development. There were many technologies and languages involved, such as PHP, React js, Django, Flask, and more...</p>
-                    </div>
-                </div>
-                <div class="timeline-item fade-in">
-                    <div class="timeline-year">2025</div>
-                    <div class="timeline-content">
-                        <h3 style="margin-bottom: 10px; color: white;">Current Focus</h3>
-                        <p>After graduation, I got a job at a private organization, and I feel this marked an important step in my journey. I received an offer from a private company on 7th September 2025. Now, I am working there and focusing on my future goals.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="skills" class="skills">
-        <div class="container">
-            <div class="section-title fade-in">
-                <h2>Programming Skills</h2>
-                <p>Languages and technologies I've learned since starting my journey in 2022</p>
-            </div>
-
-            <div class="skills-container">
-
-                <div class="skill-category fade-in">
+            <h2 class="section-title">Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
                     <div class="skill-header">
-                        <div class="skill-icon">
-                            <i class="fas fa-code"></i>
-                        </div>
-                        <div>
-                            <h3 style="color: white; margin-bottom: 5px;">Full-stack</h3>
-                            <p style="color: var(--gray); font-size: 0.9rem;">Broadening my skillset</p>
-                        </div>
+                        <span>Backend : Laravel, WordPress, Architecture MVC</span>
+                        <span>95%</span>
                     </div>
-                    <div class="skill-items">
-                        <div class="skill-item">PHP</div>
-                        <div class="skill-item">React js</div>
-                        <div class="skill-item">Django</div>
-                        <div class="skill-item">Java</div>
-                        <div class="skill-item">Flask</div>
-                        <div class="skill-item">Git</div>
-                    </div>
-                    <p style="margin-top: 20px;">Now, as a full-stack developer, I can build websites from frontend to backend. I enjoy creating dynamic, user-friendly web applications and constantly improving my skills with new technologies.</p>
+                    <div class="skill-bar"><div class="skill-progress" data-width="95%"></div></div>
                 </div>
-
-                <div class="skill-category fade-in">
+                <div class="skill-item">
                     <div class="skill-header">
-                        <div class="skill-icon">
-                            <i class="fab fa-python"></i>
-                        </div>
-                        <div>
-                            <h3 style="color: white; margin-bottom: 5px;">Python</h3>
-                            <p style="color: var(--gray); font-size: 0.9rem;">My primary language</p>
-                        </div>
+                        <span>Frontend : HTML, CSS, JavaScript, mobile-first</span>
+                        <span>90%</span>
                     </div>
-                    <p>Python is my favorite and most proficient language. I've used it for various projects including
-                        data analysis, automation, and web development.</p>
-                    <div
-                        style="margin-top: 20px; padding: 15px; background: rgba(48, 105, 152, 0.1); border-radius: 10px; border-left: 4px solid var(--python-blue);">
-                        <p style="font-size: 0.9rem; color: white;"><strong>Why Python?</strong> Its simplicity,
-                            readability, and vast ecosystem make it perfect for turning ideas into solutions quickly.
-                        </p>
-                    </div>
+                    <div class="skill-bar"><div class="skill-progress" data-width="90%"></div></div>
                 </div>
-
-                <div class="skill-category fade-in">
+                <div class="skill-item">
                     <div class="skill-header">
-                        <div class="skill-icon">
-                            <i class="fas fa-tools"></i>
-                        </div>
-                        <div>
-                            <h3 style="color: white; margin-bottom: 5px;">Learning Path</h3>
-                            <p style="color: var(--gray); font-size: 0.9rem;">Continuous growth</p>
-                        </div>
+                        <span>Base de données & serveurs</span>
+                        <span>90%</span>
                     </div>
-                    <p>My journey has been focused on practical learning through projects. Each language has contributed
-                        to my growth as a developer.</p>
-                    <div
-                        style="margin-top: 20px; padding: 15px; background: rgba(99, 102, 241, 0.1); border-radius: 10px;">
-                        <p style="font-size: 0.9rem; color: white;"><strong>Next Steps:</strong> As I mention my future goals, I also want to share some ideas and my mistakes as a YouTuber.</p>
+                    <div class="skill-bar"><div class="skill-progress" data-width="90%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span>Outils & méthodes: Git, GitHub, PHPUnit, SEO</span>
+                        <span>85%</span>
                     </div>
+                    <div class="skill-bar"><div class="skill-progress" data-width="85%"></div></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer>
+    <!-- Projets Section -->
+    <section class="section projets" id="projets">
         <div class="container">
-            <div class="footer-content">
-                <div>
-                    <h2 style="font-size: 1.8rem; margin-bottom: 10px; background: var(--gradient-1); -webkit-background-clip: text; background-clip: text; color: transparent;">
-                        <a href="https://www.youtube.com/@WeRdevelopers" style="text-decoration: none; color: inherit;">Tarik BOUKJIJ</a></h2>
-                    <p style="color: var(--gray);">A Full Stack Developer from Tripura</p>
+            <h2 class="section-title">Projets</h2>
+            <div class="projets-grid">
+                <div class="projet-card">
+                    <div class="projet-number">01</div>
+                    <h3>Al Mokhlif Oud</h3>
+                    <span class="projet-tag">Développement Web</span>
                 </div>
-                <div class="social-links">
-                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
-                    <a href="https://telegram.me/WeRdevelopers" class="social-link"><i class="fab fa-telegram"></i></a>
+                <div class="projet-card">
+                    <div class="projet-number">02</div>
+                    <h3>Mixshopi</h3>
+                    <span class="projet-tag">Développement Logiciel</span>
+                </div>
+                <div class="projet-card">
+                    <div class="projet-number">03</div>
+                    <h3>Real Awaid</h3>
+                    <span class="projet-tag">Sécurité & Optimisation</span>
+                </div>
+                <div class="projet-card">
+                    <div class="projet-number">04</div>
+                    <h3>NayefToys</h3>
+                    <span class="projet-tag">Développement Logiciel</span>
+                </div>
+                <div class="projet-card">
+                    <div class="projet-number">05</div>
+                    <h3>Alwaleed Optics</h3>
+                    <span class="projet-tag">Développement Web</span>
+                </div>
+                <div class="projet-card">
+                    <div class="projet-number">06</div>
+                    <h3>Maghreb Elec</h3>
+                    <span class="projet-tag">Sécurité & Optimisation</span>
                 </div>
             </div>
-            <div class="copyright">
-                <p>&copy;
-                    <script>document.write(new Date().getFullYear())</script> <b>Tarik BOUKJIJ</b>, All rights reserved.
-                </p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Localisation</h4>
+                            <p>Mohammedia, Maroc</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>tarikboukjij@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Téléphone</h4>
+                            <p>+212-689-385-061</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Votre email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" placeholder="Votre message" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary">Contactez-moi !</button>
+                        </div>
+                        <p class="form-note"><small><i class="fas fa-info-circle"></i> Note : Le reCAPTCHA original affichait une erreur "Invalid domain for site key". Ce formulaire est une démonstration statique fonctionnelle.</small></p>
+                    </form>
+                </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 MoroccoDer. All Rights Reserved.</p>
         </div>
     </footer>
 
-    <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
-        <i class="fas fa-chevron-up"></i>
-    </button>
-
-<script src="script.js"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>
-
-<!--This code was created by @WerDeveloper.
-Unauthorized copying, distribution, or modification of this code, in whole or in part, is strictly prohibited without prior written permission.
-Please do not remove or alter the credit to the original creator. If you wish to use this code for personal or commercial purposes, kindly contact the creator for permissions.
-Thank you for respecting the work and effort that went into creating this code. -->
